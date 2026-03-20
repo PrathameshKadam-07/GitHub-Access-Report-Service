@@ -53,6 +53,7 @@ Organizations need visibility into who has access to which repositories in GitHu
 
 Clone the repo:
 git clone https://github.com/YOUR_USERNAME/github-access-report.git
+
 cd github-access-report
 
 ## Configure GitHub token in application.properties:
@@ -60,20 +61,25 @@ cd github-access-report
 github.token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
 server.port=8080
 
+---
+
 ## Run the application:
 mvn spring-boot:run
 API Usage
 
-## Endpoint:
+---
 
+## Endpoint:
 GET /api/github/access-report?org=ORG_NAME
 
-## Example Request:
+---
 
+## Example Request:
 GET http://localhost:8080/api/github/access-report?org=google
 
-## Authentication
+---
 
+## Authentication
 Uses GitHub Personal Access Token (PAT).
 
 Token must have:
